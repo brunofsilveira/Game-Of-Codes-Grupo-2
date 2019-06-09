@@ -12,11 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/index', function () {
-    return view('index');
+Route::get('/usuario', function () {
+    return view('usuario/usuario');
+});
+
+Route::get('/formulario', function () {
+    return view('formulario');
+});
+
+Route::get('/ciclovias', function () {
+    return view('usuario/ciclovias');
 });
 
 Route::get('/admin', function() {

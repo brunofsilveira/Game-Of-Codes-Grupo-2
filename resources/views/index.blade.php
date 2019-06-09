@@ -53,8 +53,8 @@
        
 
         <header>
-                <nav role="navigation">
-                  <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Some Title <i class="material-icons left hide-on-med-and-down">apps</i></a>
+                <nav role="navigation" class="blue darken-1">
+                  <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">Bikeeper<i class="material-icons left hide-on-med-and-down">apps</i></a>
                     <ul id="dropdown" class="dropdown-content">
                       <li><a href="">Register</a></li>
                       <li class="divider"></li>
@@ -63,6 +63,7 @@
                     <ul class="right hide-on-med-and-down">
                       <li id="timer-tab"><a href="/login">Login</a></li>
                       <li id="stats-tab"><a href="/register">Cadastro</a></li>
+                      <li id="stats-tab"><a href="/formulario">Cadastrar Local</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -89,31 +90,7 @@
                 </div>
               </main>
             
-              <footer class="page-footer">
-                <div class="container">
-                  <div class="row">
-                    <div class="col l6 s12">
-                      <h5 class="white-text">Some Title</h5>
-                      <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="col l2 offset-l2 s6">
-                      <h6>About</h6>
-                      <ul>
-                        <li><a href="" class="grey-text text-lighten-3">Help</a></li>
-                        <li><a href="" class="grey-text text-lighten-3">Contact</a></li>
-                        <li><a href="" class="grey-text text-lighten-3">Suggestions</a></li>
-                      </ul>
-                    </div>
-                    <div class="col l2 s6">
-                      <h6>Developer</h6>
-                      <ul>
-                        <li><a href="" class="grey-text text-lighten-3">Source</a></li>
-                        <li><a href="" class="grey-text text-lighten-3">Contribute</a></li>
-                        <li><a href="" class="grey-text text-lighten-3">API Docs</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <footer class="page-footer blue darken-1" style="padding-top: 0">
                 <div class="footer-copyright">
                   <div class="container">Made by <a href="">Me </a></div>
                 </div>
