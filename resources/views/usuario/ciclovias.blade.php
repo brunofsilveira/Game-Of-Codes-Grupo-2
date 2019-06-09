@@ -25,6 +25,10 @@
           </div>
         </nav>
 
+
+        <img src="{{ ("storage/img/ciclovias.png") }}">
+
+
 </div>
 
 @endsection
