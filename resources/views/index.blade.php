@@ -61,10 +61,8 @@
                       <li><a href="">Sign In</a></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
-                      <li id="timer-tab"><a href="">Tab 1</a></li>
-                      <li id="stats-tab"><a href="">Tab 2</a></li>
-                      <li id="graphs-tab"><a href="">Tab 3</a></li>
-                      <li><a href="" data-activates="dropdown" class="dropdown-button">Tab 4<i class="material-icons right">arrow_drop_down</i></a></li>
+                      <li id="timer-tab"><a href="/login">Login</a></li>
+                      <li id="stats-tab"><a href="/register">Cadastro</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -74,8 +72,7 @@
                 <div class="container">
                     <div class="parallax-container">
                       <div class="parallax">
-                          {{-- <img src="{{ asset('/img/bike.jpeg') }}"> --}}
-                          <img src="{{url('storage/img/bike.png')}}" >
+                          <img src="{{ ("storage/img/Bike.jpg") }}">
 
                         </div>
                     </div>
