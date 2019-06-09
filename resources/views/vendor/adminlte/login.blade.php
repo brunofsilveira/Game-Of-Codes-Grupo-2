@@ -9,16 +9,24 @@
 @section('body_class', 'login-page')
 
 @section('body')
+
+<style>
+ b{
+     color: #1e88e5;
+ }
+</style>
     <div class="login-box">
         <div class="login-logo">
             <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
+            <div class="row" style="text-align: center;">
+                <img style="width: 75px; padding-bottom: 15px" src="{{ ("storage/img/bicicleta.png") }}">
+            </div>
             <p class="login-box-msg">{{ trans('adminlte::adminlte.login_message') }}</p>
             <form action="{{ url(config('adminlte.login_url', 'login')) }}" method="post">
                 {!! csrf_field() !!}
-
                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">
                     <input type="email" name="email" class="form-control" value="{{ old('email') }}"
                            placeholder="{{ trans('adminlte::adminlte.email') }}">

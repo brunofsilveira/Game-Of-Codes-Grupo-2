@@ -8,12 +8,21 @@
 @section('body_class', 'register-page')
 
 @section('body')
+
+<style>
+    b{
+        color: #1e88e5;
+    }
+</style>
     <div class="register-box">
         <div class="register-logo">
             <a href="{{ url(config('adminlte.dashboard_url', 'home')) }}">{!! config('adminlte.logo', '<b>Admin</b>LTE') !!}</a>
         </div>
 
         <div class="register-box-body">
+            <div class="row" style="text-align: center;">
+                <img style="width: 75px; padding-bottom: 15px" src="{{ ("storage/img/bicicleta.png") }}">
+            </div>
             <p class="login-box-msg">{{ trans('adminlte::adminlte.register_message') }}</p>
             <form action="{{ url(config('adminlte.register_url', 'register')) }}" method="post">
                 {!! csrf_field() !!}
