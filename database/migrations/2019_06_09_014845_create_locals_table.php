@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOficinasTable extends Migration
+class CreateLocalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateOficinasTable extends Migration
      */
     public function up()
     {
-        Schema::create('oficinas', function (Blueprint $table) {
+        Schema::create('locals', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome', 50);
+            $table->string('nome_dono',90);
+            $table->string('obs',180);
+            $table->double('preco_hora', 8, 2);
+            $table->string('tipo', 80);
+            $table->string('endereco', 255);
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateOficinasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('oficinas');
+        Schema::dropIfExists('locals');
     }
 }
