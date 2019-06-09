@@ -13,7 +13,9 @@ class AluguelController extends Controller
      */
     public function index()
     {
-        //
+        $linhas = Aluguel::get();
+
+        return view('', ['linhas' => $linhas]);
     }
 
     /**
@@ -23,7 +25,7 @@ class AluguelController extends Controller
      */
     public function create()
     {
-        // retorna view de form
+        return view('', ['acao'=>1]);
     }
 
     /**
@@ -34,7 +36,21 @@ class AluguelController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $dados = $request->all();
+
+        $path = $request->file('imagem')->store('fotos', 'public');
+
+        $dados['foto'] = $path;
+
+        $reg = Aluguel::create($dados);
+
+        if ($reg) {
+            return redirect()->route('')
+                   ->with('status', '');
+        } else {
+            return redirect()->route('')
+                   ->with('status', '');
+        }
     }
 
     /**
@@ -45,7 +61,9 @@ class AluguelController extends Controller
      */
     public function show($id)
     {
-        //
+        $reg = Aluguel::find($id);
+
+        return view('', ['reg' => $reg, 'acao' => 3]);
     }
 
     /**
@@ -56,7 +74,9 @@ class AluguelController extends Controller
      */
     public function edit($id)
     {
-        //
+        $reg = Aluguel::find($id);
+
+        return view('', ['reg' => $reg, 'acao' => 2]);
     }
 
     /**
@@ -68,7 +88,30 @@ class AluguelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $dados = $request->all();
+
+        $reg = Aluguel::find($id);
+
+        if (isset($dados['imagem'])) {
+
+          $path = $request->file('imagem')->store('fotos', 'public');
+
+          $dados['foto'] = $path; 
+
+          $antiga = $reg->foto;
+
+          Storage::disk('public')->delete($antiga);  
+        }
+
+        $alt = $reg->update($dados);
+
+        if ($alt) {
+            return redirect()->route('')
+                   ->with('status', '');
+        } else {
+            return redirect()->route('')
+                   ->with('status', '');
+        }        
     }
 
     /**
@@ -79,6 +122,18 @@ class AluguelController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
+        $reg = Aluguel::find($id);
+
+        $foto = $reg->foto;
+
+        Storage::disk('public')->delete($foto);  
+
+        if ($reg->delete()) {
+            return redirect()->route('')
+                   ->with('status', '');
+        } else {
+            return redirect()->route('')
+                   ->with('status', '');
+        }
+    }   
 }
