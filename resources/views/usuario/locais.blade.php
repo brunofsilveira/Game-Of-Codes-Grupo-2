@@ -5,6 +5,7 @@
 <style>
 .card .card-image img{
   height: 300px;
+  background-color: #1e88e5;
 }
 
 .card .card-content {
@@ -12,11 +13,18 @@
 }
 div .card{
   height: 490px;
+  background-color: #1e88e5;
+  color: white;
 }
 </style>
 
 <div class="row">
     <h4 style="color:#1e88e5; margin-bottom: 2rem; text-align: center">Locais cadastrados</h4>
+      <form>
+        <div class="input-field col offset-l2 l8" style="border: 2px solid #1e88e5">
+          <input placeholder="Buscar..." id="search" type="search" required>
+        </div>
+      </form>
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image" >

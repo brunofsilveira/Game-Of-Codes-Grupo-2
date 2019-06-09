@@ -39,10 +39,25 @@
                 grid-template-areas: 'menu article'
             }
             .wrapper {
-              padding-left: 300px;
+                padding-left: 165px;
             }
             article{
-              padding-left: 310px;
+                padding-left: 170px;
+            }
+            .side-nav li>a{
+                color: white;
+            }
+            li{
+                padding-top: 20px;
+            }
+            li a{
+                padding: 15px;
+            }
+            .classes-a{
+                height: 60px; text-align: center;
+            }
+            .title-rote{
+                padding: 0; margin-top: -2rem; font-size: 18px; text-align: center;
             }
         </style>
 
@@ -65,33 +80,39 @@
                           <li><a href="#!">Logout</a></li>
                       </ul>
               
-                      <nav class="light-blue lighten-1" role="navigation">
-                          <div class="nav-wrapper container">
-                              <a href="#!" class="brand-logo">Bikeeper</a>
-                              <ul class="right hide-on-med-and-down">
-                                  <!-- Dropdown Trigger -->
-                                  <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Profile<i class="material-icons right">arrow_drop_down</i></a></li>
-                              </ul>
-                          </div>
-                      </nav>
                   </div>
               
               </div>
               
-              <ul id="slide-out" class="side-nav fixed">
-                  <li><div class="user-view">
-                      <div class="background">
-                        <img src="{{ ("storage/img/Bike.jpg") }}">
-                      </div>
-                      <a href="#!user"><img class="circle" src="{{ ("storage/img/person.jpeg") }}"></a>
-                      <a href="#!name"><span class="white-text name">John Doe</span></a>
-                      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-                    </div>
-                  </li>
-                  <li><a href="/locais">Locais</a></li>
-                  <li><a href="/bicicletas">Bicicletas</a></li>
-                  <li><a href="/ciclovias">Ciclovias</a></li>
-                  <li><a href="/convenios">Convênios</a></li>
+              <ul id="slide-out" style="width: 10%;" class="side-nav fixed  blue darken-1">
+                <li style="text-align: center;">
+                    <img style="width: 75px;" src="{{ ("storage/img/logo-bicicleta.png") }}">
+                </li>
+                <li>
+                    <a href="/locais" class="classes-a">
+                    <img style="width: 30px;" src="{{ ("storage/img/maps.png") }}">
+                        <p class="title-rote" style="" ">Locais</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/bicicletas" class="classes-a">
+                    <img style="width: 30px;" src="{{ ("storage/img/logo-bicicleta.png") }}">
+                        <p class="title-rote">Bicicletas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/ciclovias" class="classes-a">
+                    <img style="width: 30px;" src="{{ ("storage/img/ciclovias.png") }}">
+                        <p class="title-rote">Ciclovias</p>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="/convenios" class="classes-a">
+                    <img style="width: 30px;" src="{{ ("storage/img/maps.png") }}">
+                        <p class="title-rote">Convênios</p>
+                    </a>
+                </li>
 
               </ul>
             </header>
