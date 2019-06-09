@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Local extends Model
 {
-    protected $fillable = ['nome_dono', 'obs', 'preco_hora', 'tipo'];
+    protected $fillable = ['nome_dono', 'obs', 'preco_hora', 'tipo', 'foto'];
 
     protected $table = 'locals';
 

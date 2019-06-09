@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Aluguel;
 
 class AluguelController extends Controller
 {
@@ -11,11 +12,12 @@ class AluguelController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $linhas = Aluguel::get();
+        $idd = $request->id;
+        $reg = Aluguel::find($idd);
 
-        return view('', ['linhas' => $linhas]);
+        return view('./usuario/aluga', ['result' => $reg]);
     }
 
     /**

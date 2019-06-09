@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Aluguel extends Model
 {
-    protected $fillable = ['user_id', 'locais_id', 'avaliacao', 'data'];
+    protected $fillable = ['user_id', 'local_id', 'avaliacao', 'data'];
 
     protected $table = 'user_locals';
 

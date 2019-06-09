@@ -74,3 +74,7 @@ Route::get('/promocao', 'EmailController@enviaEmail');
 Route::get('/clientes', function () {
     return view('admin.clientes_form');
 });
+
+Route::resource('aluguel', 'AluguelController');
+
+Route::get('/aluguel/{id}', 'LocalController@index');
