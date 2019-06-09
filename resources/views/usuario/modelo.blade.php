@@ -71,22 +71,14 @@
           <header>
               <div class="wrapper">
 
-                  <div class="">
-                      <!-- Dropdown Structure -->
-                      <ul id="dropdown1" class="dropdown-content">
-                          <li><a href="#!">User Profile</a></li>
-                          <li><a href="#!">Settings</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#!">Logout</a></li>
-                      </ul>
-              
-                  </div>
               
               </div>
               
               <ul id="slide-out" style="width: 10%;" class="side-nav fixed  blue darken-1">
                 <li style="text-align: center;">
-                    <img style="width: 75px;" src="{{ ("storage/img/logo-bicicleta.png") }}">
+                    <a href="/usuario" class="classes-a" style="height: 90px">
+                        <img style="width: 75px;" src="{{ ("storage/img/logo-bicicleta.png") }}">
+                    </a>
                 </li>
                 <li>
                     <a href="/locais" class="classes-a">
