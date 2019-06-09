@@ -14,7 +14,9 @@ class ViaController extends Controller
      */
     public function index()
     {
-        
+        $linhas = Via::orderBy('nome')->get();
+
+        return view('', ['linhas' => $linhas]);
     }
 
     /**
@@ -58,7 +60,7 @@ class ViaController extends Controller
     {
         $reg = Via::find($id);
 
-        return view('');
+        return view('', ['reg' => $reg, 'acao' => 3]);
     }
 
     /**

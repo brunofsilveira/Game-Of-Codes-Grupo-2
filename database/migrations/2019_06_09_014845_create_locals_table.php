@@ -19,6 +19,7 @@ class CreateLocalsTable extends Migration
             $table->string('obs',180);
             $table->double('preco_hora', 8, 2);
             $table->string('tipo', 80);
+            $table->string('foto', 120);
             $table->string('endereco', 255);
             $table->timestamps();
         });
