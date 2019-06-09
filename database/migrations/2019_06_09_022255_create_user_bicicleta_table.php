@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBicicletasTable extends Migration
+class CreateUserBicicletaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateBicicletasTable extends Migration
      */
     public function up()
     {
-        Schema::create('bicicletas', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('numero', 90);
-            $table->string('foto', 90);
+        Schema::create('user_bicicleta', function (Blueprint $table) {
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('local_id')->unsigned();
+            $table->foreign('local_id')->references('id')->on('bicicletas');
+            $table->string('avaliacao');
+            $table->date('data');
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateBicicletasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bicicletas');
+        Schema::dropIfExists('user_bicicleta');
     }
 }
