@@ -10,7 +10,7 @@
 </style>
 
 <div class="container">
-  <a href="{{ route('bicicletas.create') }}" class="btn btn-primary pull-right"
+  <a href="{{ route('bicicletas.create') }}" style="float: right;" class="btn btn-primary pull-right"
   role="button">Novo</a>
   <div class="row">
     @forelse ($bicicletas as $bicicleta)
@@ -34,7 +34,7 @@
     </div>
 
     @empty
-      <p> Não há bicicletas cadastrados</p>
+      <p> Não há bicicletas cadastradas</p>
     @endforelse
   </div>
 </div>
