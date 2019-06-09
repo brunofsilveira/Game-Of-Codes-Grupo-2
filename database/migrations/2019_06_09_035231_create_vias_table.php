@@ -18,6 +18,7 @@ class CreateViasTable extends Migration
             $table->string('rua', 120);
             $table->string('bairro', 90);
             $table->string('cep', 20);
+            $table->string('cidade', 90);
             $table->timestamps();
         });
     }
