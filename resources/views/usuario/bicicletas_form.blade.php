@@ -12,7 +12,6 @@
        role="button">Voltar</a>
     </h2>
 
-
    <div class="container-fluid">
 
     @if ($acao==1)
@@ -20,7 +19,7 @@
     @elseif ($acao==2)
       <form method="POST" action="{{route('bicicletas.update', $reg->id)}}" enctype="multipart/form-data">
       {!! method_field('put') !!}
-    @endif          
+    @endif
     {{ csrf_field() }}
 
     <div class="row">
