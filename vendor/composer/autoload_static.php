@@ -348,6 +348,8 @@ class ComposerStaticInit1f846de48ccabc4deb499a28471d5ed7
     );
 
     public static $classMap = array (
+        'App\\Aluguel' => __DIR__ . '/../..' . '/app/Aluguel.php',
+        'App\\Bicicleta' => __DIR__ . '/../..' . '/app/Bicicleta.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Admin\\CarroController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CarroController.php',
@@ -365,6 +367,7 @@ class ComposerStaticInit1f846de48ccabc4deb499a28471d5ed7
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Local' => __DIR__ . '/../..' . '/app/Local.php',
         'App\\Mail\\AvisoPromocional' => __DIR__ . '/../..' . '/app/Mail/AvisoPromocional.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
