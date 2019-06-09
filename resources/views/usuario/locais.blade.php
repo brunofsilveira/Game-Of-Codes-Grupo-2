@@ -9,7 +9,7 @@
 </style>
 
 <div class="row">
-    <h4 style="color:#1e88e5; margin-bottom: 2rem">Locais cadastrados</h4>
+    <h4 style="color:#1e88e5; margin-bottom: 2rem; text-align: center">Locais cadastrados</h4>
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image" >

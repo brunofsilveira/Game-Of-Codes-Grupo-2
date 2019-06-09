@@ -89,10 +89,9 @@
                     </div>
                   </li>
                   <li><a href="/locais">Locais</a></li>
-                  <li><a href="/bibliotecas">Bicicletas</a></li>
+                  <li><a href="/bicicletas">Bicicletas</a></li>
                   <li><a href="/ciclovias">Ciclovias</a></li>
                   <li><a href="/convenios">Convênios</a></li>
-                  <li><a href="/informacoes">Notícias</a></li>
 
               </ul>
             </header>

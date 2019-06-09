@@ -2,17 +2,24 @@
 
 @section('conteudo')
 
+<style>
+  .card-image {
+    height: auto;
+    weight: 100%;
+  }
+</style>
+
 <div class="container">
   <a href="{{ route('bicicletas.create') }}" class="btn btn-primary pull-right"
   role="button">Novo</a>
   <div class="row">
     @forelse ($bicicletas as $bicicleta)
         
-    <div class="col s12 m4">
+    <div class="col s6">
       <h2 class="header"></h2>
       <div class="card horizontal">
         <div class="card-image">
-          <img src="{{ ('storage/img/'. $bicicleta->foto) }}">
+          <img src="storage/{{ $bicicleta->foto }}" style="display: block; height: 200px; width: 600px">
 
         </div>
         <div class="card-stacked">
@@ -31,50 +38,6 @@
     @endforelse
   </div>
 </div>
-{{-- <table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Modelo</th>
-      <th>Marca</th>
-      <th>Foto</th>
-      <th>Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-    @forelse ($bicicletas as $c)
-      <tr>
-        <td> {{$c->modelo}} </td>
-        <td> {{$c->marca->nome}} </td>
-        <td>
-          @if (Storage::exists($c->foto))
-            <img src="{{url('storage/'.$c->foto)}}" 
-                 style="width: 100px; height: 60px" alt="Foto">
-          @else
-            <img src="{{url('storage/fotos/semfoto.png')}}" 
-                 style="width: 100px; height: 60px" alt="Foto">
-         @endif
-        </td>
-        <td> 
-            <a href="{{route('bicicletas.edit', $c->id)}}" 
-                class="btn btn-warning btn-sm" title="Alterar"
-                role="button"><i class="fa fa-edit"></i></a> &nbsp;&nbsp;
-            <form style="display: inline-block"
-                  method="post"
-                  action="{{route('bicicletas.destroy', $c->id)}}"
-                  onsubmit="return confirm('Confirma Exclusão?')">
-                   {{method_field('delete')}}
-                   {{csrf_field()}}
-                  <button type="submit" title="Excluir"
-                          class="btn btn-danger btn-sm"><i class="far fa-trash-alt"></i></button>
-            </form>
-        </td>       
-    @empty
-      <tr><td colspan=8> Não há carros cadastrados ou 
-                         para o filtro informado </td></tr>
-    @endforelse
-
-  </tbody>
-</table>   --}}
 
 {{ $bicicletas->links() }}
 
