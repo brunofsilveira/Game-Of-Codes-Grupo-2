@@ -14,7 +14,7 @@ class LocalController extends Controller
      */
     public function index()
     {
-        $linhas = Local::orderBy('nome')->get();
+        $linhas = Local::orderBy('nome_dono')->get();
 
         return view('', ['linhas' => $linhas]);
     }

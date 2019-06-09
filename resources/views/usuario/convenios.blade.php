@@ -4,7 +4,7 @@
 
 
 <div class="row">
-  <h4 style="color:#1e88e5; margin-bottom: 2rem; text-align: center">Estabelecimentos convêniados com o Bikeeper</h4>
+  <h4 class="center" style="color:#1e88e5; margin-bottom: 2rem">Estabelecimentos convêniados com o Bikeeper</h4>
 
         <div class="container">
           <div class="row">

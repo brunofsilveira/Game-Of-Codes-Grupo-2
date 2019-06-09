@@ -71,37 +71,40 @@
             
               <main>
                 <div class="container">
-                  <h3 class="center" style="color: #1e88e5">Cadastar meu local para possíveis hospedagens </h3>
+                  <h3 class="center" style="color: #1e88e5">Quero ser um hospedeiro de bicicletas e contribuir com o ecosistema </h3>
                     <div class="row" style="border: 2px solid blue; margin-top: 5rem;">
-                        <form class="col s12">
+                      <form class="col s12">
                           <div class="row">
                             <div class="input-field col s6">
-                              <input placeholder="Nome completo" id="first_name" type="text" class="validate">
-                              <label for="first_name">Nome</label>
+                              <input placeholder="Nome completo" id="nome_dono" type="text" class="validate">
+                              <label for="nome_dono">Nome</label>
                             </div>
                             <div class="input-field col s6">
-                              <input placeholder="Av. Domingos de Almeida, N 2000, 960740-200" id="last_name" type="text" class="validate">
-                              <label for="last_name">Endereço</label>
+                              <input placeholder="Nome completo" id="obs" type="text" class="validate">
+                              <label for="obs">Observação</label>
                             </div>
+                            <div class="input-field col s12">
+                              <input placeholder="Av. Domingos de Almeida, N 2000, 960740-200" id="endereco" type="text" class="validate">
+                              <label for="endereco">Endereço</label>
+                            </div>
+                            <div class="col s12">
+                              <label for="foto">Foto</label>
+                              <input type="file" id="foto" name="foto">
+                            </div>
+                            
                           </div>
                           <div class="row">
-                            <div class="input-field col s6">
-                              <input placeholder="(XX) - XXXXX-XXXX" id="password" type="password" class="validate">
-                              <label for="password">Telefone</label>
-                            </div>
-                            <div class="input-field col s6">
-                              <input placeholder="Valor por hora" id="email" type="email" class="validate">
-                              <label for="email">Preço/hora</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                              <div class="input-field col s12">
+                              <div class="input-field col s6">
                                   <select>
                                     <option value="" disabled selected>Tipo de local</option>
                                     <option value="0">Pago</option>
                                     <option value="1">Gratuito</option>
                                   </select>
                                   <label>Tipo de local</label>
+                                </div>
+                                <div class="input-field col s6">
+                                  <input placeholder="Valor por hora" id="preco_hora" type="text" class="validate">
+                                  <label for="preco_hora">Preço/hora</label>
                                 </div>
                             </div>
                         </form>
@@ -118,7 +121,7 @@
                             <div class="col s12 m4">
                               <div class="card blue-grey darken-1">
                                 <div class="card-content white-text">
-                                  <span class="card-title">Card Title</span>
+                                  <span class="card-title">Porque me cadastrar? Vale a pena?</span>
                                   <p>I am a very simple card. I am good at containing small bits of information.
                                   I am convenient because I require little markup to use effectively.</p>
                                 </div>
@@ -132,7 +135,7 @@
                             <div class="col s12 m4">
                                 <div class="card blue-grey darken-1">
                                   <div class="card-content white-text">
-                                    <span class="card-title">Card Title</span>
+                                    <span class="card-title">Vou contribuir com a população?</span>
                                     <p>I am a very simple card. I am good at containing small bits of information.
                                     I am convenient because I require little markup to use effectively.</p>
                                   </div>
@@ -146,7 +149,7 @@
                               <div class="col s12 m4">
                                   <div class="card blue-grey darken-1">
                                     <div class="card-content white-text">
-                                      <span class="card-title">Card Title</span>
+                                      <span class="card-title">É seguro me dispôr a ajudar o ecosistema?</span>
                                       <p>I am a very simple card. I am good at containing small bits of information.
                                       I am convenient because I require little markup to use effectively.</p>
                                     </div>
