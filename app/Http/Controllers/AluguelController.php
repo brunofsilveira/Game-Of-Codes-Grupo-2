@@ -23,7 +23,7 @@ class AluguelController extends Controller
      */
     public function create()
     {
-        //
+        // retorna view de form
     }
 
     /**
@@ -34,7 +34,7 @@ class AluguelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

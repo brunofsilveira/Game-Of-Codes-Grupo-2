@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Via;
 
 class ViaController extends Controller
 {
@@ -13,7 +14,7 @@ class ViaController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**
@@ -23,7 +24,7 @@ class ViaController extends Controller
      */
     public function create()
     {
-        //
+        return view('form_candidatas', ['acao'=>1]);
     }
 
     /**
@@ -34,7 +35,17 @@ class ViaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dados = $request->all();
+
+        $reg = Via::create($dados);
+
+        if ($reg) {
+            return redirect()->route('')
+                   ->with('status', '');
+        } else {
+            return redirect()->route('')
+                   ->with('status', '');
+        }
     }
 
     /**
@@ -45,7 +56,9 @@ class ViaController extends Controller
      */
     public function show($id)
     {
-        //
+        $reg = Via::find($id);
+
+        return view('');
     }
 
     /**
@@ -56,7 +69,9 @@ class ViaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $reg = Via::find($id);
+
+        return view('');
     }
 
     /**
@@ -68,7 +83,19 @@ class ViaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $dados = $request->all();
+
+        $reg = Via::find($id);
+
+        $alt = $reg->update($dados);
+
+        if ($alt) {
+            return redirect()->route('')
+                   ->with('status', '');
+        } else {
+            return redirect()->route('')
+                   ->with('status', '');
+        }     
     }
 
     /**
@@ -79,6 +106,14 @@ class ViaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $reg = Via::find($id);
+
+        if ($reg->delete()) {
+            return redirect()->route('')
+                   ->with('status', '');
+        } else {
+            return redirect()->route('')
+                   ->with('status', '');
+        }
     }
 }
