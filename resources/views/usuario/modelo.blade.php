@@ -88,12 +88,14 @@
                       <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
                     </div>
                   </li>
-                  <li><a href="#!">Locais</a></li>
-                  <li><a href="#!">Bicicletas</a></li>
-                  <li><a href="#!">Ciclovias</a></li>
-                  <li><a href="#!">Informações</a></li>
-                  <li><a href="/ciclovias">Convênios</a></li>
-              </ul>s </header>
+                  <li><a href="/locais">Locais</a></li>
+                  <li><a href="/bibliotecas">Bicicletas</a></li>
+                  <li><a href="/ciclovias">Ciclovias</a></li>
+                  <li><a href="/convenios">Convênios</a></li>
+                  <li><a href="/informacoes">Notícias</a></li>
+
+              </ul>
+            </header>
           
           <article class="col offset-l4 s8">
               @yield('conteudo')

@@ -27,6 +27,19 @@ Route::get('/ciclovias', function () {
     return view('usuario/ciclovias');
 });
 
+Route::get('/locais', function () {
+    return view('usuario/locais');
+});
+
+Route::get('/informacoes', function () {
+    return view('usuario/informacoes');
+});
+
+Route::get('/convenios', function () {
+    return view('usuario/convenios');
+});
+
+
 Route::get('/admin', function() {
     return view('admin.index');
 })->middleware('auth');
@@ -53,6 +66,8 @@ Route::prefix('admin')->group(function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('bicicletas', 'BicicletaController');
 
 Route::get('/promocao', 'EmailController@enviaEmail');
 
