@@ -29,12 +29,8 @@ div .card{
       <div class="card">
         <div class="card-image" >
           <img src="{{ ("storage/img/garagem-1.jpg") }}">
-<<<<<<< HEAD
           <span class="card-title">Card Title</span>
           <a href="{{ route('aluguel.index', 1)}}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-=======
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
->>>>>>> c3a773b717095b802e8e86f2ee026f97ccbb34be
         </div>
         <div class="card-content">
           <div class="row">

@@ -94,14 +94,14 @@
                 </li>
                 <li>
                     <a href="/ciclovias" class="classes-a">
-                    <img style="width: 30px;" src="{{ ("storage/img/ciclovias.png") }}">
+                    <img style="width: 30px;" src="{{ ("storage/img/maps.png") }}">
                         <p class="title-rote">Ciclovias</p>
 
                     </a>
                 </li>
                 <li>
                     <a href="/convenios" class="classes-a">
-                    <img style="width: 30px;" src="{{ ("storage/img/maps.png") }}">
+                    <img style="width: 30px;" src="{{ ("storage/img/formulario.png") }}">
                         <p class="title-rote">Convênios</p>
                     </a>
                 </li>

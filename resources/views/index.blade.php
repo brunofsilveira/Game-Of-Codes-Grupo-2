@@ -87,7 +87,7 @@
                 <div class="container">
                     <div class="parallax-container">
                       <div class="parallax">
-                          <img src="{{ ("storage/img/Bike.jpg") }}">
+                          <img src="{{ ("storage/img/bicicleta-index.jpg") }}">
 
                         </div>
                     </div>
